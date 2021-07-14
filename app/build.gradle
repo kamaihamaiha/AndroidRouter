@@ -4,6 +4,13 @@ plugins {
     id 'com.kk.router'
 }
 
+// 使用自定义的 Extension
+router {
+    wikiStr getRootDir().absolutePath
+}
+
+
+
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
